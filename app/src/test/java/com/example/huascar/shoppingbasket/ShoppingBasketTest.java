@@ -18,8 +18,8 @@ public class ShoppingBasketTest {
     @Before
     public void before() {
         this.shoppingBasket = new ShoppingBasket();
-        this.milk = new Product("milk", 3);
-        this.wine = new Product("wine", 10);
+        this.milk = new Product("milk", 3, false);
+        this.wine = new Product("wine", 10, false);
     }
 
     @Test
