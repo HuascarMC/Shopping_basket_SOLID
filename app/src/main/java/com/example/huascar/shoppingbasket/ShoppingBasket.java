@@ -30,13 +30,13 @@ public class ShoppingBasket {
         basket.clear();
     }
 
-    public float TotalValue() {
-        int total = 0;
+    public double TotalValue() {
+        double total = 0;
         for (Item item : basket) {
             total += item.getPrice();
         }
         if (total > 20) {
-            int discount = (20*10)/100;
+            double discount = (total*10)/100;
             total = total - discount;
         }
         return total;

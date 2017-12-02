@@ -51,7 +51,7 @@ public class ShoppingBasketTest {
     public void testTotalValue() {
         shoppingBasket.addItem(milk);
         shoppingBasket.addItem(wine);
-        assertEquals(13.0, shoppingBasket.TotalValue(), 0.01);
+        assertEquals(13.0, shoppingBasket.TotalValue(), 0.1);
     }
 
     @Test
@@ -59,7 +59,7 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(wine);
         shoppingBasket.addItem(wine);
         shoppingBasket.addItem(milk);
-        assertEquals(20.7, shoppingBasket.TotalValue());
+        assertEquals(20.7, shoppingBasket.TotalValue(), 0.1);
 
     }
 }
