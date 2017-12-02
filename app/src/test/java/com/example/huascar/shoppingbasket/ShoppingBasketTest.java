@@ -28,4 +28,6 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(milk);
         assertEquals(1, shoppingBasket.countItems());
     }
+
+
 }
