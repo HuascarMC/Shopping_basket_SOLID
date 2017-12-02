@@ -9,7 +9,7 @@ import com.example.huascar.shoppingbasket.Interfaces.Discount;
 public class TenPercentDiscount implements Discount {
 
     public double Discount(double total) {
-        double result = total - (total*10)/100;
+        double result = ((total*10)/100);
         return result;
     }
 }

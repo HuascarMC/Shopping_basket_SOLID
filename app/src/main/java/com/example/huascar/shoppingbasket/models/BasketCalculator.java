@@ -6,15 +6,14 @@ package com.example.huascar.shoppingbasket.models;
 
 public class BasketCalculator {
 
-    LoyaltyDiscount loyalty;
-    TenPercentDiscount discount;
+    LoyaltyDiscount loyalty = new LoyaltyDiscount();
+    TenPercentDiscount tenDiscount = new TenPercentDiscount();
 
     public double Calculate(ShoppingBasket basket) {
-        double result = 0;
         double total = basket.TotalValue();
-        total -= discount.Discount(total);
-        result = total - loyalty.Discount(total);
-        return result;
-
+        total -= tenDiscount.Discount(total);
+        total -= loyalty.Discount(total);
+        System.out.print(total);
+        return total;
     }
 }

@@ -35,6 +35,6 @@ public class BasketCalculatorTest {
         this.basket.addItem(milk);
         this.basket.addItem(wine);
         this.basket.addItem(steak);
-        assertEquals(0, calculator.Calculate(basket));
+        assertEquals(25.57, calculator.Calculate(basket), 0.01);
     }
 }
