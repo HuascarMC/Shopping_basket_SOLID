@@ -1,13 +1,18 @@
-package com.example.huascar.shoppingbasket;
+package com.example.huascar.shoppingbasket.models;
+
+import com.example.huascar.shoppingbasket.Interfaces.Item;
 
 import java.util.ArrayList;
 
 /**
  * Created by huascar on 02/12/2017.
  */
+//The shopping basket will be filled with products,
+//an item interface was created to prevent bad flow control.
 
 public class ShoppingBasket {
 
+    //Why generic type needs to be declared here and not constructor.
     private ArrayList<Item> basket;
 
     public ShoppingBasket() {

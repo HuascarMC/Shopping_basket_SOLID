@@ -1,5 +1,7 @@
 package com.example.huascar.shoppingbasket;
 
+import com.example.huascar.shoppingbasket.models.Product;
+
 import org.junit.Before;
 import org.junit.Test;
 

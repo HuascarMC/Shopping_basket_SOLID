@@ -1,4 +1,6 @@
-package com.example.huascar.shoppingbasket;
+package com.example.huascar.shoppingbasket.models;
+
+import com.example.huascar.shoppingbasket.Interfaces.Item;
 
 /**
  * Created by huascar on 02/12/2017.
