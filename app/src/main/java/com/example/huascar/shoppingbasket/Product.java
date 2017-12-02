@@ -23,4 +23,8 @@ public class Product implements Item {
     public int getPrice() {
         return price;
     }
+
+    public boolean getOneFree() {
+        return oneFree;
+    }
 }
