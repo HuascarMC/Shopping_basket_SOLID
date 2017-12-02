@@ -4,5 +4,5 @@ package com.example.huascar.shoppingbasket;
  * Created by huascar on 02/12/2017.
  */
 
-public class Milk {
+public class Milk implements Item {
 }
