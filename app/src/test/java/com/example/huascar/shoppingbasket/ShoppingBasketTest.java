@@ -39,12 +39,6 @@ public class ShoppingBasketTest {
     }
 
     @Test
-    public void testBuyOneGetFree() {
-        shoppingBasket.addItem(steak);
-        assertEquals(2, shoppingBasket.countItems());
-    }
-
-    @Test
     public void testRemoveItem() {
         shoppingBasket.addItem(milk);
         shoppingBasket.removeitem(milk);
