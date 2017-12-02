@@ -12,12 +12,12 @@ import static junit.framework.Assert.assertEquals;
 public class ShoppingBasketTest {
 
     ShoppingBasket shoppingBasket;
-    Milk milk;
+    Product milk;
 
     @Before
     public void before() {
         this.shoppingBasket = new ShoppingBasket();
-        this.milk = new Milk();
+        this.milk = new Product();
     }
 
     @Test
