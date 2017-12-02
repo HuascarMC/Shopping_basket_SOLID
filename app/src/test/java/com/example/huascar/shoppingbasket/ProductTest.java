@@ -22,4 +22,9 @@ public class ProductTest {
     public void testGetName() {
         assertEquals("Product", product.getName());
     }
+
+    @Test
+    public void testGetPrice() {
+        assertEquals(0, product.getPrice());
+    }
 }
