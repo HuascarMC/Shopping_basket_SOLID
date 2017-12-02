@@ -6,7 +6,6 @@ package com.example.huascar.shoppingbasket.models;
 
 public class BasketCalculator {
 
-    ShoppingBasket basket;
     LoyaltyDiscount loyalty;
     TenPercentDiscount discount;
 
