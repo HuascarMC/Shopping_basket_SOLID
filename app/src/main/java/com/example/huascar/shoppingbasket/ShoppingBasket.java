@@ -17,4 +17,8 @@ public class ShoppingBasket {
     public int countItems() {
         return basket.size();
     }
+
+    public void addItem(Item item) {
+        basket.add(item);
+    }
 }
