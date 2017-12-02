@@ -1,5 +1,6 @@
 package com.example.huascar.shoppingbasket.models;
 
+import com.example.huascar.shoppingbasket.Interfaces.Discount;
 import com.example.huascar.shoppingbasket.Interfaces.Item;
 
 /**
