@@ -51,6 +51,15 @@ public class ShoppingBasketTest {
     public void testTotalValue() {
         shoppingBasket.addItem(milk);
         shoppingBasket.addItem(wine);
-        assertEquals(13, shoppingBasket.TotalValue());
+        assertEquals(13.0, shoppingBasket.TotalValue(), 0.01);
+    }
+
+    @Test
+    public void testTotalValue10percent() {
+        shoppingBasket.addItem(wine);
+        shoppingBasket.addItem(wine);
+        shoppingBasket.addItem(milk);
+        assertEquals(20.7, shoppingBasket.TotalValue());
+
     }
 }

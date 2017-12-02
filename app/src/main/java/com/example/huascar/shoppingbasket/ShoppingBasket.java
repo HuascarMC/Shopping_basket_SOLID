@@ -30,7 +30,7 @@ public class ShoppingBasket {
         basket.clear();
     }
 
-    public int TotalValue() {
+    public float TotalValue() {
         int total = 0;
         for (Item item : basket) {
             total += item.getPrice();
