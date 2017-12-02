@@ -8,10 +8,10 @@ import java.util.ArrayList;
 
 public class ShoppingBasket {
 
-    private ArrayList basket;
+    private ArrayList<Item> basket;
 
     public ShoppingBasket() {
-        this.basket = new ArrayList<Item>();
+        this.basket = new ArrayList<>();
     }
 
     public int countItems() {
@@ -28,5 +28,12 @@ public class ShoppingBasket {
 
     public void clearBasket() {
         basket.clear();
+    }
+
+    public void TotalValue() {
+        int total = 0;
+        for (Item item : basket) {
+            total += item.getPrice();
+        }
     }
 }
