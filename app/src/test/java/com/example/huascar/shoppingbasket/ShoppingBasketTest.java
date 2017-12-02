@@ -15,7 +15,7 @@ public class ShoppingBasketTest {
 
     @Before
     public void before() {
-        ShoppingBasket shoppingBasket = new ShoppingBasket();
+        this.shoppingBasket = new ShoppingBasket();
     }
 
     @Test

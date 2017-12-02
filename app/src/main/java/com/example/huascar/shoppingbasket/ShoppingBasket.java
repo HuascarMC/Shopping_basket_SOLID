@@ -11,7 +11,7 @@ public class ShoppingBasket {
     private ArrayList basket;
 
     public ShoppingBasket() {
-        ArrayList<Item> basket = new ArrayList<>();
+        this.basket = new ArrayList<Item>();
     }
 
     public int countItems() {
