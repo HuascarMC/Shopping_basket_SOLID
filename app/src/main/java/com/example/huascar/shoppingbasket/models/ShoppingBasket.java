@@ -25,6 +25,9 @@ public class ShoppingBasket {
     }
 
     public void addItem(Item item) {
+        if (item.getOneFree() == true) {
+            basket.add(item);
+        }
         basket.add(item);
     }
 
@@ -36,7 +39,7 @@ public class ShoppingBasket {
         basket.clear();
     }
 
-    public double TotalValue(Boolean loyaltyCard) {
+    public double TotalValue() {
         double total = 0;
             for (Item item : basket) {
                 total += item.getPrice();

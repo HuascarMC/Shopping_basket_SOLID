@@ -13,7 +13,7 @@ public class Product implements Item {
     private int price;
     private boolean oneFree;
 
-    public Product(String name, int price) {
+    public Product(String name, int price, Boolean oneFree) {
         this.name = name;
         this.price = price;
         this.oneFree = oneFree;
@@ -25,6 +25,10 @@ public class Product implements Item {
 
     public int getPrice() {
         return price;
+    }
+
+    public boolean getOneFree() {
+        return oneFree;
     }
 
 }

@@ -17,7 +17,7 @@ public class ProductTest {
 
     @Before
     public void before() {
-        this.product = new Product("Product", 0);
+        this.product = new Product("Product", 0, false);
     }
 
     @Test
