@@ -13,11 +13,13 @@ public class ShoppingBasketTest {
 
     ShoppingBasket shoppingBasket;
     Product milk;
+    Product wine;
 
     @Before
     public void before() {
         this.shoppingBasket = new ShoppingBasket();
         this.milk = new Product("milk", 3);
+        this.wine = new Product("wine", 10);
     }
 
     @Test
@@ -43,5 +45,12 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(milk);
         shoppingBasket.clearBasket();
         assertEquals(0, shoppingBasket.countItems());
+    }
+
+    @Test
+    public void testTotalValue() {
+        shoppingBasket.addItem(milk);
+        shoppingBasket.addItem(wine);
+        assertEquals(13, shoppingBasket.TotalValue());
     }
 }
