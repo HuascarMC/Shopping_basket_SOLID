@@ -72,12 +72,4 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(milk);
         assertEquals(20.7, shoppingBasket.TotalValue(false), 0.1);
     }
-
-    @Test
-    public void testTotalValueLoyalty() {
-        shoppingBasket.addItem(wine);
-        shoppingBasket.addItem(wine);
-        shoppingBasket.addItem(milk);
-        assertEquals(20.2, shoppingBasket.TotalValue(true), 0.1);
-    }
 }
