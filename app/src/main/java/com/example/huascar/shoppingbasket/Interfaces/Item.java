@@ -7,5 +7,4 @@ package com.example.huascar.shoppingbasket.Interfaces;
 public interface Item {
 
     int getPrice();
-    boolean getOneFree();
 }

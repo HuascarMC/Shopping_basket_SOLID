@@ -25,9 +25,6 @@ public class ShoppingBasket {
     }
 
     public void addItem(Item item) {
-        if (item.getOneFree() == true) {
-            basket.add(item);
-        }
         basket.add(item);
     }
 

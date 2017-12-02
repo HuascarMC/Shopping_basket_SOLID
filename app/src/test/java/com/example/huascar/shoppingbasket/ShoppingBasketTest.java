@@ -22,9 +22,9 @@ public class ShoppingBasketTest {
     @Before
     public void before() {
         this.shoppingBasket = new ShoppingBasket();
-        this.milk = new Product("milk", 3, false);
-        this.wine = new Product("wine", 10, false);
-        this.steak = new Product("steak", 8, true);
+        this.milk = new Product("milk", 3);
+        this.wine = new Product("wine", 10);
+        this.steak = new Product("steak", 8);
     }
 
     @Test
@@ -63,13 +63,5 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(milk);
         shoppingBasket.addItem(wine);
         assertEquals(13.0, shoppingBasket.TotalValue(false), 0.1);
-    }
-
-    @Test
-    public void testTotalValue10percent() {
-        shoppingBasket.addItem(wine);
-        shoppingBasket.addItem(wine);
-        shoppingBasket.addItem(milk);
-        assertEquals(20.7, shoppingBasket.TotalValue(false), 0.1);
     }
 }

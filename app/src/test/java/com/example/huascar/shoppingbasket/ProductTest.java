@@ -17,7 +17,7 @@ public class ProductTest {
 
     @Before
     public void before() {
-        this.product = new Product("Product", 0, false);
+        this.product = new Product("Product", 0);
     }
 
     @Test
@@ -28,10 +28,5 @@ public class ProductTest {
     @Test
     public void testGetPrice() {
         assertEquals(0, product.getPrice());
-    }
-
-    @Test
-    public void testGetOneFree() {
-        assertEquals(false, product.getOneFree());
     }
 }
