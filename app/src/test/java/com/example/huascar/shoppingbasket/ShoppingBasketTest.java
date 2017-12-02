@@ -38,5 +38,10 @@ public class ShoppingBasketTest {
         assertEquals(0, shoppingBasket.countItems());
     }
 
-
+    @Test
+    public void testClearBasket() {
+        shoppingBasket.addItem(milk);
+        shoppingBasket.clearBasket();
+        assertEquals(0, shoppingBasket.countItems());
+    }
 }
