@@ -60,6 +60,5 @@ public class ShoppingBasketTest {
         shoppingBasket.addItem(wine);
         shoppingBasket.addItem(milk);
         assertEquals(20.7, shoppingBasket.TotalValue(), 0.1);
-
     }
 }

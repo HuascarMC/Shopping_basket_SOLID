@@ -30,7 +30,7 @@ public class ShoppingBasket {
         basket.clear();
     }
 
-    public double TotalValue() {
+    public double TotalValue(Boolean loyaltyCard) {
         double total = 0;
         for (Item item : basket) {
             total += item.getPrice();
@@ -38,6 +38,10 @@ public class ShoppingBasket {
         if (total > 20) {
             double discount = (total*10)/100;
             total = total - discount;
+            if (loyaltyCard == true) {
+                double loyalDiscount = (total*2)/100;
+                total = total - loyalDiscount;
+            }
         }
         return total;
     }
