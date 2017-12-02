@@ -7,4 +7,5 @@ package com.example.huascar.shoppingbasket;
 public interface Item {
 
     int getPrice();
+    boolean getOneFree();
 }
