@@ -35,6 +35,10 @@ public class ShoppingBasket {
         for (Item item : basket) {
             total += item.getPrice();
         }
+        if (total > 20) {
+            int discount = (20*10)/100;
+            total = total - discount;
+        }
         return total;
     }
 }
