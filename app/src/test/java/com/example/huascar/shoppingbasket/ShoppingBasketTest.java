@@ -22,4 +22,10 @@ public class ShoppingBasketTest {
     public void testCountItems() {
         assertEquals(0, shoppingBasket.countItems());
     }
+
+    @Test public void testAddItem() {
+        Milk milk = new Milk();
+        shoppingBasket.addItem(milk);
+        assertEquals(1, shoppingBasket.countItems());
+    }
 }
