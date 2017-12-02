@@ -9,6 +9,7 @@ import java.util.ArrayList;
  */
 //The shopping basket will be filled with products,
 //an item interface was created to prevent bad flow control.
+//The single responsability principle leaves me with tons of classes, is that okay?
 
 public class ShoppingBasket {
 
@@ -47,7 +48,6 @@ public class ShoppingBasket {
             double discount = (total*10)/100;
             total = total - discount;
             if (loyaltyCard == true) {
-                double loyalDiscount = (total*2)/100;
                 total = total - loyalDiscount;
             }
         }

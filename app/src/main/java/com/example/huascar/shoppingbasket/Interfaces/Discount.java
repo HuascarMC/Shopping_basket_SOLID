@@ -6,5 +6,5 @@ package com.example.huascar.shoppingbasket.Interfaces;
 
 public interface Discount {
 
-    int Discount(int total);
+    double Discount(int total);
 }
