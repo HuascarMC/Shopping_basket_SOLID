@@ -7,4 +7,9 @@ import com.example.huascar.shoppingbasket.Interfaces.Discount;
  */
 
 public class LoyaltyDiscount implements Discount {
+
+    public int Discount(int total) {
+        int result = total - (total*2)/100;
+        return result;
+    }
 }
