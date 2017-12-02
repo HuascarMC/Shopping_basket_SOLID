@@ -30,10 +30,11 @@ public class ShoppingBasket {
         basket.clear();
     }
 
-    public void TotalValue() {
+    public int TotalValue() {
         int total = 0;
         for (Item item : basket) {
             total += item.getPrice();
         }
+        return total;
     }
 }
