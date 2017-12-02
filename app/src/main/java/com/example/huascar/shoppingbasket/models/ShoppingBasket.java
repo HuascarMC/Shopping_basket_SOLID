@@ -41,16 +41,20 @@ public class ShoppingBasket {
 
     public double TotalValue(Boolean loyaltyCard) {
         double total = 0;
-        for (Item item : basket) {
-            total += item.getPrice();
-        }
-        if (total > 20) {
-            double discount = (total*10)/100;
-            total = total - discount;
-            if (loyaltyCard == true) {
-                total = total - loyalDiscount;
+            for (Item item : basket) {
+                total += item.getPrice();
             }
-        }
         return total;
     }
 }
+
+//     for (Item item : basket) {
+//             total += item.getPrice();
+//             }
+//             if (total > 20) {
+//             double discount = (total*10)/100;
+//             total = total - discount;
+//             if (loyaltyCard == true) {
+//             total =
+//             }
+//             }
