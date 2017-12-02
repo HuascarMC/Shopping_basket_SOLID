@@ -7,9 +7,14 @@ import java.util.ArrayList;
  */
 
 public class ShoppingBasket {
+
     private ArrayList basket;
 
     public ShoppingBasket() {
-        ArrayList basket = new ArrayList<>();
+        ArrayList<Item> basket = new ArrayList<>();
+    }
+
+    public int countItems() {
+        return basket.size();
     }
 }
