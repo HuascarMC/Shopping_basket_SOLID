@@ -10,6 +10,8 @@ public class Product implements Item {
     private int price;
 
     public Product(String name, int price) {
-        
+        this.name = name;
+        this.price = price;
     }
+
 }
